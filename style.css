@@ -1,0 +1,182 @@
+:root {
+  --bg2: #e9ecff;
+  --accent: #808cfd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+html {
+  font-size: 8px;
+}
+
+.header {
+  padding: 2.5rem;
+  background: var(--bg2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header-nav {
+  display: flex;
+  gap: 7.5rem;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-btn {
+  background-color: var(--accent);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  transition: all ease 0.5s;
+}
+
+.main-btn:hover {
+  filter: hue-rotate(100deg);
+}
+
+.hero {
+  padding: 2.5rem;
+}
+
+.hero h1,
+h3 {
+  font-size: 14.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.card:last-child .card-description {
+  border-top: 0;
+}
+
+.card img {
+  max-width: 900px;
+}
+
+.card-description {
+  font-size: 2rem;
+  padding: 2.5rem 2.5rem 8.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 426px;
+  background-color: var(--bg2);
+}
+.card-description h2 {
+  font-size: 5.625rem;
+}
+
+.card-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card-paragraph a {
+  text-decoration: none;
+  color: black;
+  padding-left: 2rem;
+}
+
+.card-description-img-small {
+  max-width: 426px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-navigation {
+  width: 426px;
+  font-size: 2rem;
+  background-color: var(--bg2);
+}
+
+.gallery-navigation h3 {
+  font-size: 5.625rem;
+  text-align: left;
+}
+
+.gallery-navigation-card h4 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.gallery-navigation-card {
+  padding: 2.5rem;
+}
+
+.gallery-navigation-card-link {
+  padding: 5rem;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 854px;
+  object-fit: cover;
+  max-height: 550px;
+}
+
+.join {
+  height: 60rem;
+  background-color: var(--accent);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  gap: 2rem;
+}
+
+.join h5 {
+  font-size: 7rem;
+  text-transform: uppercase;
+}
+
+.join-btn {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 6.5rem;
+  padding: 2.5rem 2rem;
+  background-color: var(--bg2);
+}
