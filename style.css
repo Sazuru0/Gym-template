@@ -20,6 +20,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -71,14 +72,18 @@ h3 {
 .card {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card:last-child .card-description {
   border-top: 0;
 }
 
-.card img {
-  max-width: 900px;
+.card img:not(.card-description-img-small) {
+  max-width: 66.66%;
+  width: 100%;
 }
 
 .card-description {
@@ -87,7 +92,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 426px;
+  width: 33.33%;
   background-color: var(--bg2);
 }
 .card-description h2 {
@@ -98,6 +103,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  width: 100%;
 }
 
 .card-paragraph a {
@@ -107,22 +113,26 @@ h3 {
 }
 
 .card-description-img-small {
-  max-width: 426px;
+  max-width: 33.33%;
+  width: 100%;
 }
 
 .gallery {
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .gallery-navigation {
-  width: 426px;
+  width: 34%;
   font-size: 2rem;
   background-color: var(--bg2);
 }
 
 .gallery-navigation h3 {
-  font-size: 5.625rem;
+  font-size: 200%;
   text-align: left;
 }
 
@@ -143,10 +153,10 @@ h3 {
 }
 
 .gallery-img {
-  width: 100%;
+  width: 66%;
   max-width: 854px;
   object-fit: cover;
-  max-height: 550px;
+  max-height: 100%;
 }
 
 .join {
@@ -156,6 +166,7 @@ h3 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   font-size: 2rem;
   gap: 2rem;
 }
@@ -179,4 +190,126 @@ h3 {
   font-size: 6.5rem;
   padding: 2.5rem 2rem;
   background-color: var(--bg2);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-description-img-small {
+    max-width: 33.33%;
+    width: 100%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery-navigation-card h3 {
+    font-size: 2rem;
+  }
+
+  .gallery-img {
+    width: 66.66%;
+  }
+
+  .hero h1,
+  h3 {
+    font-size: 8rem;
+  }
+
+  .card-description h2 {
+    font-size: 3rem;
+  }
+
+  .card-paragraph {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo p {
+    display: none;
+  }
+
+  .card img:not(.card-description-img-small) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card-description {
+    width: 100%;
+  }
+
+  .gallery-img {
+    width: 60%;
+  }
+
+  .card {
+    display: inline;
+  }
+
+  .card-description h2 {
+    font-size: 4rem;
+  }
+
+  .card-description-img-small {
+    width: 100%;
+  }
+
+  .gallery {
+    display: inline;
+  }
+
+  .gallery-navigation {
+    width: 100%;
+  }
+
+  .gallery-navigation-card {
+    font-size: 2rem;
+  }
+
+  .gallery-navigation h3 {
+    font-size: 4rem;
+  }
+
+  .gallery-img {
+    width: 100%;
+  }
+
+  .join {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .join h5 {
+    font-size: 2rem;
+  }
+
+  .footer img {
+    display: none;
+  }
+
+  .footer h6 {
+    font-size: 2rem;
+  }
+
+  .hero h1,
+  h3 {
+    font-size: 5rem;
+  }
+
+  .header-nav {
+    gap: 2rem;
+  }
 }
